@@ -6,7 +6,7 @@ const HomePage =()=> {
         <nav className="navbar navbar-light bg-light static-top">
           <div className="container">
             <a className="navbar-brand" href="#!">
-             CREANDO SONRISAS
+              CREANDO SONRISAS
             </a>
             {/* <a className="btn btn-primary" href="#signup">
               Siguiente
