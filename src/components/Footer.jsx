@@ -16,11 +16,11 @@ const Footer = () => {
             </li>
             <li className="list-inline-item">⋅</li>
             <li className="list-inline-item">
-              <a href="#!">Terminos de uso</a>
+              <a href="#!">Términos de uso</a>
             </li>
             <li className="list-inline-item">⋅</li>
             <li className="list-inline-item">
-              <a href="#!">Politicas de privasidad</a>
+              <a href="#!">Políticas de privacidad</a>
             </li>
           </ul>
           <p className="text-muted small mb-4 mb-lg-0">
