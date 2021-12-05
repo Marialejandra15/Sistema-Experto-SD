@@ -22,37 +22,35 @@ class CourseSeeder extends Seeder
     public function run()
     {
         $courses = Course::factory(40)->create();
-        foreach($courses as $course)
-        {
-           Requirement::factory(4)->create
-          ([ 
-            'course_id'=> $course->id,
-          ]);
+        foreach ($courses as $course) {
 
-          Goal::factory(4)->create
-          ([ 
-            'course_id'=> $course->id,
-          ]);
+            Image::factory(1)->create([
+                'imageable_id' => $course->id,
+                'imageable_type' => 'App\Models\Course',
+            ]);
 
-          Audience::factory(4)->create
-          ([ 
-            'course_id'=> $course->id,
-          ]);
+            Requirement::factory(4)->create([
+                    'course_id' => $course->id,
+                ]);
 
-          $sections = Section::factory(4)->create
-          ([ 
-            'course_id'=> $course->id,
-          ]);
-          foreach ($sections as $section){
-              $lessons = Lesson::factory(4)->create([ 'section_id'=> $section->id]);
-          
-          foreach ($lessons as $lesson){
-              Description::factory(1)->create(['lesson_id'=> $lesson->id]);
-          }
+            Goal::factory(4)->create([
+                    'course_id' => $course->id,
+                ]);
+
+            Audience::factory(4)->create([
+                    'course_id' => $course->id,
+                ]);
+
+            $sections = Section::factory(4)->create([
+                    'course_id' => $course->id,
+                ]);
+            foreach ($sections as $section) {
+                $lessons = Lesson::factory(4)->create(['section_id' => $section->id]);
+
+                foreach ($lessons as $lesson) {
+                    Description::factory(1)->create(['lesson_id' => $lesson->id]);
+                }
             }
-
         }
     }
-      
-    
 }
