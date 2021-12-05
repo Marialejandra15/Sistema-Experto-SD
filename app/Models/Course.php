@@ -51,6 +51,11 @@ public function category() {
 public function price() {
     return $this->belongsTo('App\Models\Price');
 }
-
+public function image() {
+    return $this->morphOne('App\Models\Image','Imageable');
+}
+public function lessons() {
+    return $this->hasManyThrough('App\Models\Lesson','App\Models\Section');
+}
 }
 

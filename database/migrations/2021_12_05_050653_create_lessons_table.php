@@ -19,7 +19,7 @@ class CreateLessonsTable extends Migration
             $table->string('url');
             $table->string('iframe');
 
-            $table->unsignedBigInteger('plataform_id')-> nullable;
+            $table->unsignedBigInteger('plataform_id')->nullable();
             $table->unsignedBigInteger('section_id');
 
             $table->foreign('plataform_id')->references('id')->on('plataforms')->onDelete('set null');
