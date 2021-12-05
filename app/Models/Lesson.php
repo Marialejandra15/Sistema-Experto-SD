@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Lesson extends Model
 {
+    protected $guarded = ['id'];
     use HasFactory;
     public function sections() {
         return $this->belongsTo('App\Models\Section');
@@ -24,10 +25,10 @@ class Lesson extends Model
         return $this->morphOne('App\Models\Resource','resourceable');
     }
     public function comments() {
-        return $this->morphOne('App\Models\User','commentable');
+        return $this->morphMany('App\Models\Comment','commentable');
     }
     public function reactions() {
-        return $this->morphOne('App\Models\Reaction','reactionable');
+        return $this->morphMany('App\Models\Reaction','reactionable');
     }
     
 }

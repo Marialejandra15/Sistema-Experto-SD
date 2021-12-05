@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Course extends Model
 {
+    protected $guarded = ['id','status'];
     use HasFactory;
     const Borrador = 1;
     const Revision = 2;
@@ -52,7 +53,7 @@ public function price() {
     return $this->belongsTo('App\Models\Price');
 }
 public function image() {
-    return $this->morphOne('App\Models\Image','Imageable');
+    return $this->morphOne('App\Models\Image','imageable');
 }
 public function lessons() {
     return $this->hasManyThrough('App\Models\Lesson','App\Models\Section');

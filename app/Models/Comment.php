@@ -7,15 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Comment extends Model
 {
+    protected $guarded = ['id'];
     use HasFactory;
+
     public function commentable() {
         return $this->morphTo();
     }
-    public function commets() {
-        return $this->morphMany('App\Models\Comment','Comentable');
+    public function comments() {
+        return $this->morphMany('App\Models\Comment','commentable');
     }
     public function reactions() {
-        return $this->morphMany('App\Models\Comment','reactionable');
+        return $this->morphMany('App\Models\Reaction','reactionable');
     }
     public function user() {
         return $this->belongsTo('App\Models\User');

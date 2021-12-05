@@ -7,8 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Plataform extends Model
 {
+    protected $guarded = ['id'];
     use HasFactory;
-    //Uno a Muchos
+  
     public function lessons() {
         return $this->hasMany('App\Models\Lesson');
     }
