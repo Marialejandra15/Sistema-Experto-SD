@@ -9,6 +9,11 @@ class Lesson extends Model
 {
     protected $guarded = ['id'];
     use HasFactory;
+
+    public function getCompletedAttribute(){
+        return $this->users->contains(auth()->user()->id);
+    }
+
     public function sections() {
         return $this->belongsTo('App\Models\Section');
     }
@@ -30,5 +35,5 @@ class Lesson extends Model
     public function reactions() {
         return $this->morphMany('App\Models\Reaction','reactionable');
     }
-    
+
 }
