@@ -17,12 +17,18 @@ class Course extends Model
     const Publicado = 3;
 
 
+    //TODO Arregar el puntaje
     public function getRatingAttribute(){
         if($this->reviews_count){
             return round($this->reviews->avg('rating'), 1);
         }else{
             return 5;
         }
+    }
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
     }
 
     public function requirements()

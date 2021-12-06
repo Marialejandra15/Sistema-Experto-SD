@@ -22,3 +22,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::get('cursos', function () {
     return "Aqui catalogi de cursos";
 })->name('courses.index');
+
+Route::get('cursos/{course}', function ($course) {
+    return 'Info curso '.$course;
+})->name('courses.show');
