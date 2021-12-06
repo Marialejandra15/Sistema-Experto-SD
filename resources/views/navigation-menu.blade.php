@@ -10,6 +10,8 @@ $nav_links = [
 
 <nav x-data="{ open: false }" class="bg-white border-b border-gray-100 shadow">
     <!-- Primary Navigation Menu -->
+    <div class="container">       
+    </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex">
@@ -110,7 +112,11 @@ $nav_links = [
                                 </div>
 
                                 <x-jet-dropdown-link href="{{ route('profile.show') }}">
-                                    {{ __('Profile') }}
+                                    Perfil
+                                </x-jet-dropdown-link>
+
+                                <x-jet-dropdown-link href="{{ route('instructor.courses.index') }}">
+                                    Instructor
                                 </x-jet-dropdown-link>
 
                                 @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
@@ -181,7 +187,11 @@ $nav_links = [
             <div class="mt-3 space-y-1">
                 <!-- Account Management -->
                 <x-jet-responsive-nav-link href="{{ route('profile.show') }}" :active="request()->routeIs('profile.show')">
-                    {{ __('Profile') }}
+                  Perfil
+                </x-jet-responsive-nav-link>
+
+                <x-jet-responsive-nav-link href="{{ route('instructor.courses.index') }}" :active="request()->routeIs('instructor.courses.index')">
+                    Instructor
                 </x-jet-responsive-nav-link>
 
                 @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
