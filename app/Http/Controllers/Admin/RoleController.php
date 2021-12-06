@@ -10,6 +10,7 @@ use Spatie\Permission\Models\Permission;
 
 class RoleController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -50,7 +51,7 @@ class RoleController extends Controller
       ]);
 
       $role->permissions()->attach($request->permissions);
-  
+
      return redirect()->route('admin.roles.index')->with('info','El rol se creo sastifactoriamente');
     }
 
