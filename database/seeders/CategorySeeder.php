@@ -15,13 +15,13 @@ class CategorySeeder extends Seeder
     public function run()
     {
         Category::create([
-            'name'=>'A'
+            'name'=>'Lectura'
         ]);
         Category::create([
-            'name'=>'B'
+            'name'=>'Escritura'
         ]);
         Category::create([
-            'name'=>'C'
+            'name'=>'Vocabulario'
         ]);
     }
 }

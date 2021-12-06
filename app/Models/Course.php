@@ -17,6 +17,17 @@ class Course extends Model
     const Publicado = 3;
 
 
+    public function scopeCategory($query, $category_id){
+        if($category_id){
+            return $query->where('category_id', $category_id);
+        }
+    }
+
+    public function scopeLevel($query, $level_id){
+        if($level_id){
+            return $query->where('level_id', $level_id);
+        }
+    }
     public function getRatingAttribute(){
         if($this->reviews_count){
             return round($this->reviews->avg('rating'), 1);
@@ -25,9 +36,14 @@ class Course extends Model
         }
     }
 
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
     public function requirements()
     {
-        return $this->hasMany('App\Models\Requirements');
+        return $this->hasMany('App\Models\Requirement');
     }
 
     public function goals()
