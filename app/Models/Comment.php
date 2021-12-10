@@ -10,6 +10,8 @@ class Comment extends Model
     protected $guarded = ['id'];
     use HasFactory;
 
+    public $fillable = ['comment, user_id'];
+
     public function commentable() {
         return $this->morphTo();
     }

@@ -7,10 +7,11 @@
 @stop
 
 @section('content')
-<div class="alert alert-primary" role="alert">
-    <strong>Well done!</strong> You successfully read this
-    important alert message.
-</div>
+@if(session('info'))
+    <div class="alert alert-primary" role="alert">
+        <strong>Éxito!</strong> {{ session('info') }}
+    </div>
+@endif
 <div class="card">
     <div class="card-header">
     <a href="{{route('admin.roles.create')}}"> Crear Curso </a>
@@ -40,16 +41,16 @@
                         <form action = "{{route('admin.roles.destroy', $role)}}"method ="POST">
                         @method('delete')
                         @csrf
-                        <button class = "btn btn-danger" type = "submit"> Eliminar </button> 
+                        <button class = "btn btn-danger" type = "submit"> Eliminar </button>
                     </form>
                     </td>
                 </tr>
-                    
+
                 @empty
                 <tr>
                     <td colspan ="4">No hay ningun rol registrado </td>
                 </tr>
-                    
+
                 @endforelse
 
             </tbody>

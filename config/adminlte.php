@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
+    'title' => 'Smile_Makers',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -46,7 +46,7 @@ return [
     */
 
     'logo' => '<b>Smile</b>Makers',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    'logo_img' => 'vendor/adminlte/dist/img/logo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
@@ -246,21 +246,27 @@ return [
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
         ],
-        
+
         [
             'text'        => 'Dashboard',
             'route'         => 'admin.home',
             'icon'        => 'fas fa-fw fa-tachometer-alt',
-            // 'label'       => 4,
-            // 'label_color' => 'success',
+            'can' => 'Ver dashboard'
         ],
 
         [
-            'text'        => 'Lista de Roles',
-            'route'         => 'admin.roles.index',
-            'icon'        => 'fas fa-fw fa-users-cog',
-            // 'label'       => 4,
-            // 'label_color' => 'success',
+            'text' => 'Lista de Roles',
+            'route' => 'admin.roles.index',
+            'icon' => 'fas fa-fw fa-users-cog',
+            'active' => ['admin/roles*'],
+            'can' => 'Listar role'
+        ],
+        [
+            'text' => 'Usuarios',
+            'route' => 'admin.users.index',
+            'icon' => 'fas fa-fw fa-users',
+            'active' => ['admin/users*'],
+            'can' => 'Leer usuarios'
         ],
         ['header' => 'account_settings'],
         [
@@ -481,5 +487,5 @@ return [
     |
     */
 
-    'livewire' => false,
+    'livewire' => true,
 ];

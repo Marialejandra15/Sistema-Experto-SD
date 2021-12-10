@@ -16,7 +16,7 @@ $nav_links = [
 <nav x-data="{ open: false }" class="bg-white border-b border-gray-100 shadow">
     <!-- Primary Navigation Menu -->
 
-    <div class="container">       
+    <div class="container">
     </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -72,10 +72,17 @@ $nav_links = [
                                     Perfil
                                 </x-jet-dropdown-link>
 
+                                @can('Leer cursos')
                                 <x-jet-dropdown-link href="{{ route('instructor.courses.index') }}">
                                     Instructor
                                 </x-jet-dropdown-link>
+                                @endcan
 
+                                @can('Ver dashboard')
+                                <x-jet-dropdown-link href="{{ route('admin.home') }}">
+                                    Administrador
+                                </x-jet-dropdown-link>
+                                @endcan
 
                                 <div class="border-t border-gray-100"></div>
 
@@ -142,10 +149,16 @@ $nav_links = [
                   Perfil
                 </x-jet-responsive-nav-link>
 
+                @can('Leer cursos')
                 <x-jet-responsive-nav-link href="{{ route('instructor.courses.index') }}" :active="request()->routeIs('instructor.courses.index')">
                     Instructor
                 </x-jet-responsive-nav-link>
-
+                @endcan
+                @can('Ver dashboard')
+                <x-jet-responsive-nav-link href="{{ route('admin.home') }}" >
+                    Administrador
+                </x-jet-responsive-nav-link>
+                @endcan
                 <!-- Authentication -->
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
