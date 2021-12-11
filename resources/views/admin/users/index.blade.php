@@ -8,6 +8,6 @@
 @stop
 
 @section('content')
-    @livewire('admin-user')
+    @livewire('admin.users-index')
 @stop
 

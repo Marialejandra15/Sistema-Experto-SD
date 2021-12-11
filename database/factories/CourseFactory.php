@@ -22,7 +22,7 @@ class CourseFactory extends Factory
         $title = $this->faker->sentence();
 
         return [
-            'title'=>$this->faker->sentence(),
+            'title'=>$title,
             'subtitle'=>$this->faker->sentence(),
             'description'=>$this->faker->paragraph(),
             'status'=>$this->faker->randomElement([Course::Borrador, Course::Revision, Course::Publicado]),
