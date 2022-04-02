@@ -2,7 +2,7 @@
     @foreach ($section->lessons as $item)
 
         <article class="card mt-4">
-            <div class="card-body">
+            <div class="card-body" x-data="{open: false}">
 
                 @if($lesson->id == $item->id)
                     <form wire:submit.prevent="update">
@@ -42,10 +42,10 @@
                     </form>
                 @else
                     <header>
-                        <h1> <i class="far fa-play-circle text-blue-500"></i> Lección: {{ $item->name }}</h1>
+                        <h1 class="cursor-pointer" x-on:click="open = !open"> <i class="far fa-play-circle text-blue-500"></i> Lección: {{ $item->name }}</h1>
                     </header>
 
-                    <div>
+                    <div x-show="open">
                         <hr class="my-2">
 
                         <p class="text-sm">Plataforma: {{ $item->plataform->name }}</p>

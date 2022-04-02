@@ -28,7 +28,7 @@
         @livewire('navigation-menu')
 
         <!-- Page Content -->
-        <div class="container py-8 grid md:grid-cols-5">
+        <div class="container py-8 grid md:grid-cols-5 gap-4">
             <aside>
                 <h1 class="font-bold text-lg mb-4">Edición del curso</h1>
                 <ul>
@@ -45,6 +45,32 @@
                         <a href="">Estudiantes</a>
                     </li>
                 </ul>
+
+                @switch($course->status)
+                    @case(1)
+                        <form action="{{route('instructor.courses.status', $course)}}" method="POST">
+                            @csrf
+                            <button class="btn btn-red" type="submit">Solicitar revision</button>
+                        </form>
+                        @break
+                    @case(2)
+                        <div class="card text-gray-500">
+                            <div class="card-body">
+                                Este curso esta encuentra en revision
+                            </div>
+                        </div>
+                        @break
+                    @case(3)
+                        <div class="card text-gray-500">
+                            <div class="card-body">
+                                Este curso esta encuentra publicado
+                            </div>
+                        </div>
+                        @break
+
+                    @default
+
+                @endswitch
 
             </aside>
 
