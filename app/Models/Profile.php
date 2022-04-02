@@ -10,7 +10,7 @@ class Profile extends Model
     protected $guarded = ['id'];
     use HasFactory;
     //Relacion uno a uno inversa
-public function user() {
-    return $this->belongsTo('App\Models\User');
-}
+    public function user() {
+        return $this->belongsTo('App\Models\User');
+    }
 }
