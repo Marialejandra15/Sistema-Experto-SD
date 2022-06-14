@@ -14,24 +14,24 @@ class PriceSeeder extends Seeder
      */
     public function run()
     {
-        Price::create([ 
+        Price::create([
             'name'=>'Gratis',
             'value'=> 0
             ]);
 
-            Price::create([ 
-                'name'=>'500 bs (Nivel 1)',
+            Price::create([
+                'name'=>'50 bs (Nivel 1)',
                 'value'=> 500
                 ]);
 
-                Price::create([ 
-                    'name'=>'1000 bs (Nivel 2)',
-                    'value'=> 1000
+                Price::create([
+                    'name'=>'100 bs (Nivel 2)',
+                    'value'=> 100
                     ]);
 
-                    Price::create([ 
-                        'name'=>'1200bs (Nivel 3)',
-                        'value'=> 1200
+                    Price::create([
+                        'name'=>'150 bs (Nivel 3)',
+                        'value'=> 150
                         ]);
     }
 }

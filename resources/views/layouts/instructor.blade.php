@@ -30,16 +30,16 @@
         <!-- Page Content -->
         <div class="container py-8 grid md:grid-cols-5 gap-4">
             <aside>
-                <h1 class="font-bold text-lg mb-4">Edición del curso</h1>
+                <h1 class="font-bold text-lg mb-4">Edición del cuento</h1>
                 <ul>
                     <li class="leading-7 mb-1 border-l-4 @routeIs('instructor.courses.edit', $course) border-indigo-400 @else border-transparent  @endif pl-2">
-                        <a href="{{ route('instructor.courses.edit', $course) }}">Información del curso</a>
+                        <a href="{{ route('instructor.courses.edit', $course) }}">Información del cuento</a>
                     </li>
                     <li class="leading-7 mb-1 border-l-4 @routeIs('instructor.courses.curriculum', $course) border-indigo-400 @else border-transparent  @endif pl-2">
-                        <a href="{{ route('instructor.courses.curriculum', $course) }}">Lecciones del curso</a>
+                        <a href="{{ route('instructor.courses.curriculum', $course) }}">Lecciones del cuento</a>
                     </li>
                     <li class="leading-7 mb-1 border-l-4 @routeIs('instructor.courses.goals', $course) border-indigo-400 @else border-transparent  @endif pl-2" pl-2">
-                        <a href="{{ route('instructor.courses.goals', $course) }}">Metas del curso</a>
+                        <a href="{{ route('instructor.courses.goals', $course) }}">Metas del cuento</a>
                     </li>
                     {{-- <li class="leading-7 mb-1 border-l-4 border-transparent pl-2">
                         <a href="">Estudiantes</a>
@@ -56,14 +56,14 @@
                     @case(2)
                         <div class="card text-gray-500">
                             <div class="card-body">
-                                Este curso esta encuentra en revision
+                                Este cuento esta encuentra en revision
                             </div>
                         </div>
                         @break
                     @case(3)
                         <div class="card text-gray-500">
                             <div class="card-body">
-                                Este curso esta encuentra publicado
+                                Este cuento esta encuentra publicado
                             </div>
                         </div>
                         @break

@@ -19,7 +19,7 @@
                     <img class="rounded-xl h-36 w-full object-cover" src="{{ asset('images/bg/cursos.jpg') }}" alt="">
                 </figure>
                 <header class="mt-2">
-                    <h1 class="text-center text-xl text-gray-700">Cursos especializados</h1>
+                    <h1 class="text-center text-xl text-gray-700">Cuentos entretenidos</h1>
                 </header>
                 <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
                     explicabo optio mollitia nam. Suscipit adipisci cum velit labore similique molestias</p>
@@ -60,20 +60,20 @@
     </section>
 
     <section class="mt-24 bg-gray-700 py-12">
-        <h1 class="text-center text-3xl text-white">¿Quieres ver nuestro catálogo de cursos?</h1>
+        <h1 class="text-center text-3xl text-white">¿Quieres ver nuestro catálogo de cuentos?</h1>
         <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto,
             asperiores.</p>
         <div class="flex justify-center">
             <a href="{{ route('courses.index') }}"
                 class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-6">
-                Catálogo de cursos
+                Catálogo de cuentos
             </a>
         </div>
     </section>
 
     <section class="my-24">
-        <h1 class="text-center text-3xl text-gray-600">ÚLTIMOS CURSOS</h1>
-        <p class="text-center text-gray-500 text-sm mb-6">Los mejores cursos a tu disposición</p>
+        <h1 class="text-center text-3xl text-gray-600">ÚLTIMOS CUENTOS</h1>
+        <p class="text-center text-gray-500 text-sm mb-6">Los mejores cuentos a tu disposición</p>
 
         <div
             class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8">

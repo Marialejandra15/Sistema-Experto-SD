@@ -1,10 +1,10 @@
 <div class="container">
-    <x-table-responsive title="Cursos">
+    <x-table-responsive title="Cuentos">
 
         <div class="px-6 py-4 flex">
             <input wire:keydown="limpiarPage" wire:model="search" type="text" class="form-input flex-1 shadow-sm"
-                placeholder="Ingrese el nombre de un curso">
-            <a class="btn btn-red ml-2" href="{{ route('instructor.courses.create') }}">Crear nuevo curso</a>
+                placeholder="Ingrese el nombre de un cuento">
+            <a class="btn btn-red ml-2" href="{{ route('instructor.courses.create') }}">Crear nuevo cuento</a>
         </div>
         @if($courses->count())
         <table class="table-auto w-full">
@@ -69,7 +69,7 @@
                                 <i class="fas fa-star text-{{ $course->rating >= 5 ? 'yellow' : 'gray' }}-400"></i>
                             </li>
                         </ul>
-                        <p class="text-gray-600 text-sm">Valoración del curso</p>
+                        <p class="text-gray-600 text-sm">Valoración del cuento</p>
                     </td>
                     <td class="p-2 whitespace-nowrap text-center">
                         @switch($course->status)
