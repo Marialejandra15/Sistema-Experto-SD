@@ -149,4 +149,9 @@ class CourseController extends Controller
 
         return back();
     }
+
+    public function goals(Course $course)
+    {
+        return view('instructor.courses.goals', compact('course'));
+    }
 }

@@ -17,15 +17,22 @@
                 {{ $current->description->name }}
             </div>
             @endif
+            <div class="flex justify-between mt-4">
+                <div class="flex items-center cursor-pointer" wire:click="completed">
+                    @if($current->completed)
+                        <i class="fas fa-toggle-on text-2xl text-green-600"></i>
+                    @else
+                        <i class="fas fa-toggle-off text-2xl text-gray-600"></i>
+                    @endif
 
-            <div class="flex items-center mt-4 cursor-pointer" wire:click="completed">
-                @if($current->completed)
-                    <i class="fas fa-toggle-on text-2xl text-green-600"></i>
-                @else
-                    <i class="fas fa-toggle-off text-2xl text-gray-600"></i>
+                    <p class="text-sm ml-2">Marcar esta unidad como terminada</p>
+                </div>
+                @if($current->resource)
+                <div class="flex items-center cursor-pointer" wire:click="download">
+                    <i class="fas fa-download text-2xl text-blue-500"></i>
+                    <p class="text-gray-600 text-sm ml-2 ">Descargar recurso</p>
+                </div>
                 @endif
-
-                <p class="text-sm ml-2">Marcar esta unidad como terminada</p>
             </div>
 
             <div class="card mt-2">

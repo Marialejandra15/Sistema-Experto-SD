@@ -85,4 +85,9 @@ class CourseStatus extends Component
         $this->course = Course::find($this->course->id);
     }
 
+    public function download()
+    {
+        return response()->download(storage_path('app/'.$this->current->resource->url));
+    }
+
 }
