@@ -1,3 +1,3 @@
 <a href="/">
-    <img src="{{ asset('images/logos/Sin título-1.png') }}" width="60px" class="rounded-full" alt="logo">
+    <img src="{{ asset('images/logos/logoPNG.png') }}" width="100px" class="rounded-full" alt="logo">
 </a>

@@ -1,10 +1,9 @@
 <x-app-layout>
-    <section class="bg-cover" style="background-image: url({{ asset('images/bg/backgroun.jpg'); }})">
+    <section class="bg-cover" style="background-image: url({{ asset('images/bg/library-869061_1920.jpg'); }})">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-36">
             <div class="w-full md:w-3/4 lg:w-1/2">
-                <h1 class="text-white font-bold text-4xl">Creando sonrisas en los más pequeños</h1>
-                <p class="text-white text-lg mt-2 mb-4">Aqui en contraras una educación digna para las más bellas
-                    sonrisas </p>
+                <h1 class="text-white font-bold text-4xl">Las mejores historias en un solo lugar</h1>
+                <p class="text-white text-lg mt-2 mb-4">Aqui podras encontrar obras un gran repertorio de cuentos e historias de todos los generos</p>
                     @livewire('search')
             </div>
         </div>
@@ -16,42 +15,42 @@
             class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8">
             <article>
                 <figure>
-                    <img class="rounded-xl h-36 w-full object-cover" src="{{ asset('images/bg/cursos.jpg') }}" alt="">
+                    <img class="rounded-xl h-36 w-full object-cover" src="{{ asset('images/bg/baby-5953965_640.jpg') }}" alt="">
                 </figure>
                 <header class="mt-2">
-                    <h1 class="text-center text-xl text-gray-700">Cuentos entretenidos</h1>
+                    <h1 class="text-center text-xl text-gray-700">Para todas las edades</h1>
                 </header>
                 <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
                     explicabo optio mollitia nam. Suscipit adipisci cum velit labore similique molestias</p>
             </article>
             <article>
                 <figure>
-                    <img class="rounded-xl h-36 w-full object-cover" src="{{ asset('images/bg/soporte.jpg') }}" alt="">
+                    <img class="rounded-xl h-36 w-full object-cover" src="{{ asset('images/bg/knight-2565957_640.jpg') }}" alt="">
                 </figure>
                 <header class="mt-2">
-                    <h1 class="text-center text-xl text-gray-700">Soporte 24/7</h1>
+                    <h1 class="text-center text-xl text-gray-700">Las mejores historias</h1>
                 </header>
                 <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
                     explicabo optio mollitia nam. Suscipit adipisci cum velit labore similique molestias</p>
             </article>
             <article>
                 <figure>
-                    <img class="rounded-xl h-36 w-full object-cover" src="{{ asset('images/bg/profesuibal.jpg') }}"
+                    <img class="rounded-xl h-36 w-full object-cover" src="{{ asset('images/bg/skull-1193784_640.jpg') }}"
                         alt="">
                 </figure>
                 <header class="mt-2">
-                    <h1 class="text-center text-xl text-gray-700">La mejor orientación</h1>
+                    <h1 class="text-center text-xl text-gray-700">Todos los generos</h1>
                 </header>
                 <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
                     explicabo optio mollitia nam. Suscipit adipisci cum velit labore similique molestias</p>
             </article>
             <article>
                 <figure>
-                    <img class="rounded-xl h-36 w-full object-cover" src="{{ asset('images/bg/educacion.jpg') }}"
+                    <img class="rounded-xl h-36 w-full object-cover" src="{{ asset('images/bg/pointing-4190930_640.jpg') }}"
                         alt="">
                 </figure>
                 <header class="mt-2">
-                    <h1 class="text-center text-xl text-gray-700">Educación digna</h1>
+                    <h1 class="text-center text-xl text-gray-700">Tu puedes formar parte</h1>
                 </header>
                 <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
                     explicabo optio mollitia nam. Suscipit adipisci cum velit labore similique molestias</p>

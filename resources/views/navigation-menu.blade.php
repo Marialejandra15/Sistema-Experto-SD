@@ -99,8 +99,10 @@ $nav_links = [
                             </x-slot>
                         </x-jet-dropdown>
                     @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Ingresar</a>
-                        <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Registrarse</a>
+                        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                            <x-jet-nav-link href="{{ route('login') }}">Ingresar</x-jet-nav-link>
+                            <x-jet-nav-link href="{{ route('register') }}" >Registrarse</x-jet-nav-link>
+                        </div>
                     @endauth
                 </div>
             </div>
