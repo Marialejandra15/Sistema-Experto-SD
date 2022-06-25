@@ -1,5 +1,5 @@
 <div class="flex justify-center h-screen"> <div class="hidden bg-cover md:block lg:w-2/3"
-        style="background-image: url({{ asset('images/bg/bible-1868070_1280.jpg') }})">
+        style="background-image: url({{ asset('images/bg/glasses-1052010_1920.jpg') }})">
         <div class="flex items-center h-full px-20 bg-gray-900 bg-opacity-40">
             <div>
                 @if(Route::currentRouteName() == 'login')
