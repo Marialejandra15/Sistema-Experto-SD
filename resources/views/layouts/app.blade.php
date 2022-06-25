@@ -13,7 +13,8 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.css') }}">
-
+        <link rel="shortcut icon" type="image/png" href="{{ asset('images/logos/logoPNG.png') }}">
+        <link rel="shortcut icon" sizes="192x192" href="{{ asset('images/logos/logoPNG.png') }}">
         @livewireStyles
 
         <!-- Scripts -->
@@ -38,5 +39,9 @@
         @isset($js)
             {{ $js }}
         @endisset
+        <footer class="flex bg-gray-600 text-white items-center justify-center">
+            <img class="my-1" src="{{ asset('images/logos/LogoSidebar.png') }}" width="60px" alt="">
+            <p>© 2022 2t.map, para una lectura mejor</p>
+        </footer>
     </body>
 </html>

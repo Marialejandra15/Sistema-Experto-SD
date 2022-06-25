@@ -1,7 +1,7 @@
 <div class="card" x-data="{open: false}">
     <div class="card-body bg-gray-100">
         <header x-on:click="open = !open" class="cursor-pointer">
-            <h1>Recursos de la leccion</h1>
+            <h1>Recuentos de la leccion</h1>
         </header>
         <div x-show="open">
             <hr class="my-2">

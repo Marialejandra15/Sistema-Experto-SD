@@ -1,6 +1,6 @@
 <x-instructor-layout :course="$course">
 
-    <h1 class="text-2xl font-bold">INFORMACIÓN DEL CURSO</h1>
+    <h1 class="text-2xl font-bold">INFORMACIÓN DEL CUENTO</h1>
     <hr class="mt-2 mb-6">
 
     {!! Form::model($course, ['route' => ['instructor.courses.update', $course], 'method' => 'put',
