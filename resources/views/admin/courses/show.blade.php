@@ -47,7 +47,7 @@
                             </li>
                         @empty
                             <li class="text-gray-700 text-base">
-                                Este cuento no tiene asignado ninguna meta
+                                Este curso no tiene asignado ninguna meta
                             </li>
                         @endforelse
                     </ul>
@@ -82,7 +82,7 @@
                 @empty
                 <div class="card">
                     <div class="card-body">
-                        Este cuento no tiene ninguna seccion
+                        Este curso no tiene ninguna seccion
                     </div>
                 </div>
                 @endforelse
@@ -95,7 +95,7 @@
                     @forelse ($course->requirements as $requirement)
                     <li class="text-gray-700 text-base">{{ $requirement->name }}</li>
                     @empty
-                    <li class="text-gray-700 text-base">Este cuento no tiene ningun requerimiento</li>
+                    <li class="text-gray-700 text-base">Este curso no tiene ningun requerimiento</li>
                     @endforelse
                 </ul>
             </section>

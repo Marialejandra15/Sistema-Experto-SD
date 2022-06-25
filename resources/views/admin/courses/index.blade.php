@@ -4,7 +4,7 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Cuentos pendientes de aprobacion</h1>
+    <h1>Cursos pendientes de aprobacion</h1>
 @stop
 
 @section('content')

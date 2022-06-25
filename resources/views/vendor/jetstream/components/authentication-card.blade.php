@@ -6,7 +6,7 @@
                 <h2 class="text-4xl font-bold text-white">Ingresa a tu plataforma!</h2>
 
                 <p class="max-w-xl mt-3 text-gray-300">
-                    2t.map es una plataforma que fomenta a la lectura y ayuda al desarrollo de la comprension lectora.
+                    SmileMakers es una plataforma didactica para la enseñanza de niños con sindrome de Down, ingresa para poder ver nuestros cursos
                     <b>¿No tienes una cuenta?</b>
                 </p>
                 <a class="text-white hover:underline hover:text-gray-100" href="{{ route('register') }}">Registrate gratis</a>

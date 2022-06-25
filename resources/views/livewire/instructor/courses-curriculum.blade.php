@@ -1,5 +1,5 @@
 <div>
-    <h1 class="text-2xl font-bold">LECCIONES DEL CUENTO</h1>
+    <h1 class="text-2xl font-bold">LECCIONES DEL CURSO</h1>
     <hr class="mt-2 mb-6">
 
     @foreach ($course->sections as $item)

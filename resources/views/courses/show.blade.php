@@ -107,11 +107,11 @@
                     </div>
 
                     @can('enrolled', $course)
-                        <a href="{{ route('courses.status', $course) }}"type="submit" class="btn btn-red btn-block mt-4">Continuar con el cuento</a>
+                        <a href="{{ route('courses.status', $course) }}"type="submit" class="btn btn-red btn-block mt-4">Continuar con el curso</a>
                     @else
                         <form action="{{ route('courses.enrolled', $course) }}" method="post">
                             @csrf
-                            <button type="submit" class="btn btn-red btn-block mt-4">Llevar este cuento</button>
+                            <button type="submit" class="btn btn-red btn-block mt-4">Llevar este curso</button>
                         </form>
                     @endcan
 

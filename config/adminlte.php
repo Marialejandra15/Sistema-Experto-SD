@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => '2t.map',
+    'title' => 'SmileMakers',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -45,8 +45,8 @@ return [
     |
     */
 
-    'logo' => '<b>2t</b>.map',
-    'logo_img' => 'images/logos/LogoSidebar.png',
+    'logo' => '<b>Smile</b>Makers',
+    'logo_img' => 'images/logos/logo smile makers.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',

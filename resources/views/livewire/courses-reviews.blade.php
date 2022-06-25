@@ -4,7 +4,7 @@
     @can('enrolled', $course)
     <article class="mb-4">
         @can('valued', $course)
-        <textarea wire:model="comment" class="form-input w-full" rows="3" placeholder="Ingrese una reseña del cuento"></textarea>
+        <textarea wire:model="comment" class="form-input w-full" rows="3" placeholder="Ingrese una reseña del curso"></textarea>
 
         <div class="flex items-center">
             <button class="btn btn-blue mr-2 " wire:click="store">Guardar</button>
@@ -29,7 +29,7 @@
         @else
         <div class="flex items-center bg-blue-500 text-white text-sm font-bold px-4 py-3" role="alert">
             <i class="fas fa-exclamation fill-current w-4 h-4 mr-2"></i>
-            <p>Ya valoró este Cuento</p>
+            <p>Ya valoró este Curso</p>
         </div>
         @endcan
 

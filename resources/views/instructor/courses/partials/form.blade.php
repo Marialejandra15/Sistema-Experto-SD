@@ -1,5 +1,5 @@
 <div class="mb-4">
-    {!! Form::label('title', 'Título del cuento') !!}
+    {!! Form::label('title', 'Título del curso') !!}
     {!! Form::text('title', null, ['class' => 'form-input block w-full mt-1'.($errors->has('title') ? ' border-red-600' : '' )]) !!}
 
     @error('title')
@@ -10,7 +10,7 @@
 </div>
 
 <div class="mb-4">
-    {!! Form::label('slug', 'Slug del cuento') !!}
+    {!! Form::label('slug', 'Slug del curso') !!}
     {!! Form::text('slug', null, ['class' => 'form-input block w-full mt-1'.($errors->has('slug') ? ' border-red-600' : '')]) !!}
 
     @error('slug')
@@ -21,7 +21,7 @@
 </div>
 
 <div class="mb-4">
-    {!! Form::label('subtitle', 'Subtitulo del cuento') !!}
+    {!! Form::label('subtitle', 'Subtitulo del curso') !!}
     {!! Form::text('subtitle', null, ['class' => 'form-input block w-full mt-1'.($errors->has('subtitle') ? ' border-red-600' : '')]) !!}
 
     @error('subtitle')
@@ -32,7 +32,7 @@
 </div>
 
 <div class="mb-4">
-    {!! Form::label('description', 'Descripción del cuento') !!}
+    {!! Form::label('description', 'Descripción del curso') !!}
     {!! Form::textarea('description', null, ['class' => 'form-input block w-full mt-1'.($errors->has('description') ? ' border-red-600' : '')]) !!}
 
     @error('description')
@@ -77,7 +77,7 @@
     </div>
 </div>
 
-<h1 class="text-2xl font-bold mt-8 mb-2">Imagen del cuento</h1>
+<h1 class="text-2xl font-bold mt-8 mb-2">Imagen del curso</h1>
 
 <div class="grid grid-cols-2 gap-4">
     <figure>
