@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'Smile_Makers',
+    'title' => 'SmileMakers',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -46,7 +46,7 @@ return [
     */
 
     'logo' => '<b>Smile</b>Makers',
-    'logo_img' => 'vendor/adminlte/dist/img/logo.png',
+    'logo_img' => 'images/logos/logo smile makers.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
